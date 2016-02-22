@@ -13,5 +13,6 @@
             android:startColor="@color/colorPrimaryDark"
             android:endColor="@color/colorPrimaryDark"
             android:angle="0" />
+
     </shape>
 </rotate> 
