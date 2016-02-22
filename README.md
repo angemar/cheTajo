@@ -1,2 +1,2 @@
 # Notifier
-get notified from all of social network 
+get notified from all of social network!
