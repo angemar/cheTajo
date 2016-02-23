@@ -28,6 +28,8 @@ public class SplashActivity extends AppCompatActivity {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
+
+                //start e new activity
                 Intent intent = new Intent(SplashActivity.this,
                         MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
