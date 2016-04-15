@@ -1,3 +1,4 @@
-# Notifier
-get notified from all of social network!
+# cheTajo
+
+Find and follow your favourite hairdressers!
 
