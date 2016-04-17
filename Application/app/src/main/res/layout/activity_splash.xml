@@ -7,35 +7,38 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.teamlz.notifier.SplashActivity"
+    tools:context="com.teamlz.cheTajo.SplashActivity"
     android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/icon"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="80dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/logonotif"
-        android:layout_alignParentTop="true"/>
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/che_tajo_icon"
+        android:layout_marginBottom="72dp"
+        android:layout_above="@+id/tajo"
+        android:layout_centerHorizontal="true" />
 
     <TextView
-        android:id="@+id/logoText"
+        android:id="@+id/che"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notifier"
-        android:textSize="90dp"
-        android:textColor="@color/black"
-        android:layout_centerInParent="true" />
+        android:text="che"
+        android:textSize="75dp"
+        android:textColor="@color/white"
+        android:layout_alignBottom="@+id/tajo"
+        android:layout_toStartOf="@+id/tajo" />
 
-    <ProgressBar
-        android:id="@+id/progress"
+    <TextView
+        android:id="@+id/tajo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logoText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/progressbar"/>
-
+        android:text="Tajo"
+        android:textSize="85dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="71dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

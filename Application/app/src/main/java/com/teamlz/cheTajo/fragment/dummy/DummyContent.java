@@ -1,4 +1,4 @@
-package com.teamlz.notifier.fragment.dummy;
+package com.teamlz.cheTajo.fragment.dummy;
 
 import java.util.ArrayList;
 import java.util.HashMap;

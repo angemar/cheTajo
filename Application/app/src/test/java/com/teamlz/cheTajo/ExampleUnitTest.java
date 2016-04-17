@@ -1,4 +1,4 @@
-package com.teamlz.notifier;
+package com.teamlz.cheTajo;
 
 import org.junit.Test;
 

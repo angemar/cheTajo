@@ -1,13 +1,13 @@
-package com.teamlz.notifier.fragment;
+package com.teamlz.cheTajo.fragment;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.teamlz.notifier.R;
-import com.teamlz.notifier.fragment.ItemFragment.OnListFragmentInteractionListener;
-import com.teamlz.notifier.fragment.dummy.DummyContent.DummyItem;
+import com.teamlz.cheTajo.R;
+import com.teamlz.cheTajo.fragment.ItemFragment.OnListFragmentInteractionListener;
+import com.teamlz.cheTajo.fragment.dummy.DummyContent.DummyItem;
 
 import java.util.List;
 

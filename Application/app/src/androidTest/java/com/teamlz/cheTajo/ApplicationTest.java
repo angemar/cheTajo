@@ -1,4 +1,4 @@
-package com.teamlz.notifier;
+package com.teamlz.cheTajo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

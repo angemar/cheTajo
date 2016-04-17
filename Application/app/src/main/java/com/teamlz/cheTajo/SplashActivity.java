@@ -1,4 +1,4 @@
-package com.teamlz.notifier;
+package com.teamlz.cheTajo;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

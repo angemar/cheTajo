@@ -1,4 +1,4 @@
-package com.teamlz.notifier;
+package com.teamlz.cheTajo;
 
 
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.teamlz.notifier.fragment.ItemFragment;
-import com.teamlz.notifier.fragment.dummy.DummyContent;
+import com.teamlz.cheTajo.fragment.ItemFragment;
+import com.teamlz.cheTajo.fragment.dummy.DummyContent;
 
 public class MainActivity extends AppCompatActivity implements ItemFragment.OnListFragmentInteractionListener {
 
