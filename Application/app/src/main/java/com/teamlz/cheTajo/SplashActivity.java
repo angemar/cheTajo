@@ -31,7 +31,7 @@ public class SplashActivity extends AppCompatActivity {
 
                 //start e new activity
                 Intent intent = new Intent(SplashActivity.this,
-                        MainActivity.class);
+                        ScrollingActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
