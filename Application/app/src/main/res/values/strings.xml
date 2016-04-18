@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">cheTajo</string>
+    <string name="app_name">CheTajo</string>
     <string name="action_settings">Settings</string>
     <string name="facebook_app_id">1662438997370784</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
@@ -92,4 +92,6 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>

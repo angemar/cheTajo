@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ProgressBar;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -12,7 +11,6 @@ import java.util.TimerTask;
 public class SplashActivity extends AppCompatActivity {
 
     public static int SPLASH_TIMER = 3000;
-    private ProgressBar progbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
 
                 //start e new activity
                 Intent intent = new Intent(SplashActivity.this,
-                        ScrollingActivity.class);
+                        SignupActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
