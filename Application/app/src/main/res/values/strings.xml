@@ -3,6 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="facebook_app_id">1662438997370784</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="email">e-mail</string>
+    <string name="welcome_message">Benvenuto, registrati attraverso Facebook oppure scorri verso destra per procedere manualmente</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

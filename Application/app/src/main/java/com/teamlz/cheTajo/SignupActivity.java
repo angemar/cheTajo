@@ -1,5 +1,6 @@
 package com.teamlz.cheTajo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.facebook.CallbackManager;
@@ -74,8 +76,8 @@ public class SignupActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
-            return 3;
+            // Show 2 total pages.
+            return 2;
         }
 
         @Override
@@ -85,8 +87,8 @@ public class SignupActivity extends AppCompatActivity {
                     return "SECTION 1";
                 case 1:
                     return "SECTION 2";
-                case 2:
-                    return "SECTION 3";
+                /*case 2:
+                    return "SECTION 3";*/
             }
             return null;
         }
@@ -120,32 +122,48 @@ public class SignupActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_signup, container, false);
+            View rootView;
 
-            LoginButton loginButton = (LoginButton) rootView.findViewById(R.id.login_button);
-            loginButton.setReadPermissions(Arrays.asList("public_profile", "manage_notifications",
-                    "publish_actions", "user_friends"));
+            switch (getArguments().getInt(ARG_SECTION_NUMBER)) {
+                case 1:
+                    rootView = inflater.inflate(R.layout.fragment_signup_0, container, false);
+                    LoginButton loginButton = (LoginButton) rootView.findViewById(R.id.login_button);
+                    loginButton.setReadPermissions(Arrays.asList("public_profile", "manage_notifications",
+                            "publish_actions", "user_friends"));
 
-            // Callback registration
-            CallbackManager callbackManager = CallbackManager.Factory.create();
-            loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
-                @Override
-                public void onSuccess(LoginResult loginResult) {
-                    // App code
-                }
+                    // Callback registration
+                    CallbackManager callbackManager = CallbackManager.Factory.create();
+                    loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+                        @Override
+                        public void onSuccess(LoginResult loginResult) {
+                            // App code
+                        }
 
-                @Override
-                public void onCancel() {
-                    // App code
-                }
+                        @Override
+                        public void onCancel() {
+                            // App code
+                        }
 
-                @Override
-                public void onError(FacebookException exception) {
-                    // App code
-                }
-            });
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+                        @Override
+                        public void onError(FacebookException exception) {
+                            // App code
+                        }
+                    });
+                    break;
+
+                default:
+                    rootView = inflater.inflate(R.layout.fragment_signup_1, container, false);
+                    Button button = (Button) rootView.findViewById(R.id.login);
+                    button.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent i = new Intent (v.getContext(), ScrollingActivity.class);
+                            startActivity(i);
+                            getActivity().finishAffinity();
+                        }
+                    });
+                    break;
+            }
             return rootView;
         }
     }
