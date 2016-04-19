@@ -1,4 +1,4 @@
 # cheTajo
 
-Find and follow your favourite hairdressers!
+Find and follow your favourite hairdressers!!
 
