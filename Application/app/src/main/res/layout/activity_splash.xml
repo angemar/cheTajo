@@ -14,7 +14,7 @@
         android:id="@+id/icon"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:src="@drawable/che_tajo_icon"
+        android:src="@drawable/che_tajo_icon_blue_grey_final"
         android:layout_marginTop="172dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />

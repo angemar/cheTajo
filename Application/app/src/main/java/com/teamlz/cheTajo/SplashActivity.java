@@ -1,9 +1,11 @@
 package com.teamlz.cheTajo;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -22,6 +24,10 @@ public class SplashActivity extends AppCompatActivity {
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_IMMERSIVE);
         //finish immersive mode
+
+        Typeface roboto = Typeface.createFromAsset(this.getAssets(), "font/Roboto-Light.ttf");
+        TextView text = (TextView) findViewById(R.id.text);
+        text.setTypeface(roboto);
 
         TimerTask task = new TimerTask() {
             @Override

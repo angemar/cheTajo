@@ -128,8 +128,7 @@ public class SignupActivity extends AppCompatActivity {
                 case 1:
                     rootView = inflater.inflate(R.layout.fragment_signup_0, container, false);
                     LoginButton loginButton = (LoginButton) rootView.findViewById(R.id.login_button);
-                    loginButton.setReadPermissions(Arrays.asList("public_profile", "manage_notifications",
-                            "publish_actions", "user_friends"));
+                    loginButton.setReadPermissions(Arrays.asList("email", "user_friends"));
 
                     // Callback registration
                     CallbackManager callbackManager = CallbackManager.Factory.create();
