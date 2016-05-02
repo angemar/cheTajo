@@ -12,12 +12,12 @@ import android.widget.TextView;
 import com.firebase.client.Firebase;
 import com.teamlz.cheTajo.R;
 
-public class ScrollingActivity extends AppCompatActivity {
+public class UserProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scrolling);
+        setContentView(R.layout.activity_user_profile);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
