@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.firebase.client.Firebase;
+
 public class ScrollingActivity extends AppCompatActivity {
 
     @Override
@@ -27,8 +29,18 @@ public class ScrollingActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                final Firebase myFirebase = new Firebase(getResources().getString(R.string.firebase_url));
+                /** example
+                myFirebase.child("message").setValue("Do you have data? You'll love Firebase.");
+                myFirebase.child("user").setValue(true);*/
+
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                        .setAction("Action Dio Porco?", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+
+                            }
+                        }).show();
             }
         });
     }
