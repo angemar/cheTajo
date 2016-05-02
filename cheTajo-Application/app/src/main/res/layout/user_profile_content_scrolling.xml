@@ -23,8 +23,8 @@
 
             <com.mikepenz.iconics.view.IconicsImageView
                 android:id="@+id/emailIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
@@ -63,12 +63,11 @@
 
             <com.mikepenz.iconics.view.IconicsImageView
                 android:id="@+id/positionIcon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
-                android:visibility="invisible"
                 app:iiv_icon="gmd-place"/>
 
             <TextView
@@ -90,7 +89,7 @@
                 android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_marginTop="8dp"
                 android:layout_toEndOf="@id/positionIcon"
-                android:text="Work"
+                android:text="Place"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 android:textColor="@color/colorPrimaryDark" />
         </RelativeLayout>
