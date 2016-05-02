@@ -17,6 +17,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nome Cognome"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:layout_gravity="center"/>
 
         <ImageView
@@ -45,7 +47,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
-                    android:text="follow"/>
+                    android:text="FOLLOW"
+                    android:textStyle="bold"/>
 
                 <com.mikepenz.iconics.view.IconicsImageView
                     android:layout_centerVertical="true"
@@ -73,7 +76,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
-                    android:text="like"/>
+                    android:text="LIKE"
+                    android:textStyle="bold"/>
 
                 <com.mikepenz.iconics.view.IconicsImageView
                     android:layout_centerVertical="true"
@@ -101,7 +105,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
-                    android:text="map"
+                    android:text="MAP"
+                    android:textStyle="bold"
                     android:gravity="end|right"/>
 
                 <com.mikepenz.iconics.view.IconicsImageView
