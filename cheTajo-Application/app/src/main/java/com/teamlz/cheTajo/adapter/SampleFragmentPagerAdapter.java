@@ -4,7 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.teamlz.cheTajo.BlankFragment;
+import com.teamlz.cheTajo.fragment.BlankFragment;
+import com.teamlz.cheTajo.fragment.HomeListFragment;
 
 
 /**
@@ -26,7 +27,18 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return BlankFragment.newInstance(position + 1);
+
+        switch (position){
+
+            case 0:
+                return HomeListFragment.newIstance();
+
+            case 1:
+                return BlankFragment.newInstance(position);
+
+            default:
+                return null;
+        }
     }
 
     @Override
