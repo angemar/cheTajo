@@ -29,7 +29,6 @@ public class LoginOrSignupActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login_or_signup);
 
-
         //Set up manual login button
         Button manualLoginButton = (Button) findViewById(R.id.manual_sign_in_button);
         assert manualLoginButton != null;

@@ -3,7 +3,7 @@
     android:id="@+id/main_coordinator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/colorPrimaryExtraLight"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <android.support.design.widget.AppBarLayout
@@ -16,6 +16,7 @@
             android:id="@+id/main_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:titleTextColor="@color/colorPrimaryExtraLight"
             app:layout_scrollFlags="scroll|enterAlways"
             android:fitsSystemWindows="true"
             android:theme="@style/ThemeOverlay.AppCompat.Dark" />
@@ -25,8 +26,9 @@
                 android:layout_gravity="bottom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/colorPrimaryLight"
                 app:tabMode="fixed"
-                app:tabSelectedTextColor="@color/white"
+                app:tabSelectedTextColor="@color/colorPrimaryExtraLight"
                 app:tabTextColor="@color/colorPrimaryLight"
                 android:background="@color/colorPrimary"/>
 
@@ -37,7 +39,6 @@
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 
     <com.melnykov.fab.FloatingActionButton
         android:id="@+id/fab_add"

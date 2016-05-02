@@ -5,7 +5,6 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -20,14 +19,14 @@ import com.melnykov.fab.FloatingActionButton;
 import com.mikepenz.iconics.IconicsDrawable;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.BottomBarTab;
-import com.roughike.bottombar.OnMenuTabClickListener;
 import com.roughike.bottombar.OnTabClickListener;
 import com.teamlz.cheTajo.R;
 import com.teamlz.cheTajo.adapter.SampleFragmentPagerAdapter;
 
-/**
+/*
  * Created by francesco on 02/05/16.
  */
+
 public class MainActivity extends AppCompatActivity {
 
     public static FloatingActionButton fab_add;

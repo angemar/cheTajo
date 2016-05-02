@@ -7,8 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.teamlz.cheTajo.fragment.BlankFragment;
 import com.teamlz.cheTajo.fragment.HomeListFragment;
 
-
-/**
+/*
  * Created by francesco on 02/05/16.
  */
 

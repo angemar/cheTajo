@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="10dp"
     app:cardElevation="10dp">
 
@@ -16,17 +17,20 @@
             android:id="@+id/dresser_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome Cognome"
+            android:text="@string/home_list_item_name_surname"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
         <ImageView
+            android:contentDescription="@string/home_list_item_description"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:src="@mipmap/ic_launcher"/>
 
         <LinearLayout
+            android:baselineAligned="false"
             android:layout_marginTop="@dimen/fab_margin"
             android:layout_marginStart="@dimen/fab_margin"
             android:layout_width="match_parent"
@@ -47,14 +51,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
-                    android:text="FOLLOW"
+                    android:text="@string/home_list_item_follow"
                     android:textStyle="bold"/>
 
                 <com.mikepenz.iconics.view.IconicsImageView
                     android:layout_centerVertical="true"
                     android:id="@+id/icon_follow"
                     android:layout_marginStart="6dp"
-                    android:layout_toRightOf="@id/follow_text"
+                    android:layout_toEndOf="@id/follow_text"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
                     app:iiv_color="@color/colorPrimaryDark"
@@ -76,13 +80,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
-                    android:text="LIKE"
+                    android:text="@string/home_list_item_like"
                     android:textStyle="bold"/>
 
                 <com.mikepenz.iconics.view.IconicsImageView
                     android:layout_centerVertical="true"
                     android:id="@+id/icon_like"
-                    android:layout_toRightOf="@id/like_text"
+                    android:layout_toEndOf="@id/like_text"
                     android:layout_marginStart="6dp"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
@@ -105,9 +109,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark"
-                    android:text="MAP"
+                    android:text="@string/home_list_item_map"
                     android:textStyle="bold"
-                    android:gravity="end|right"/>
+                    android:gravity="end"/>
 
                 <com.mikepenz.iconics.view.IconicsImageView
                     android:layout_centerVertical="true"
@@ -115,7 +119,6 @@
                     android:layout_marginStart="6dp"
                     android:layout_width="18dp"
                     android:layout_height="18dp"
-                    android:layout_toRightOf="@id/map_text"
                     android:layout_toEndOf="@id/map_text"
                     app:iiv_color="@color/colorPrimaryDark"
                     app:iiv_icon="gmd-room" />
