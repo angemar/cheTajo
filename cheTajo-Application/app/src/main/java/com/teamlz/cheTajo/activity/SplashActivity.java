@@ -1,4 +1,4 @@
-package com.teamlz.cheTajo;
+package com.teamlz.cheTajo.activity;
 
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.firebase.client.Firebase;
+import com.teamlz.cheTajo.R;
 
 import java.util.Timer;
 import java.util.TimerTask;

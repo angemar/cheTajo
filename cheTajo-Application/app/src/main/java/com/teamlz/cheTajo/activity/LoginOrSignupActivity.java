@@ -1,4 +1,4 @@
-package com.teamlz.cheTajo;
+package com.teamlz.cheTajo.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +12,8 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.teamlz.cheTajo.R;
+
 import java.util.Arrays;
 
 public class LoginOrSignupActivity extends AppCompatActivity {
@@ -30,10 +32,11 @@ public class LoginOrSignupActivity extends AppCompatActivity {
 
         //Set up manual login button
         Button manualLoginButton = (Button) findViewById(R.id.manual_sign_in_button);
+        assert manualLoginButton != null;
         manualLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent (v.getContext(), ScrollingActivity.class);
+                Intent i = new Intent (v.getContext(), MainActivity.class);
                 startActivity(i);
                 finishAffinity();
             }
@@ -64,6 +67,7 @@ public class LoginOrSignupActivity extends AppCompatActivity {
 
         //Set up facebook login button
         AppCompatButton facebookLoginButton = (AppCompatButton) findViewById(R.id.facebook_sign_in_button);
+        assert facebookLoginButton != null;
         facebookLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

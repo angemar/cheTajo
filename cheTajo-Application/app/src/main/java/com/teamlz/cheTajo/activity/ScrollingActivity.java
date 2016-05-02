@@ -1,4 +1,4 @@
-package com.teamlz.cheTajo;
+package com.teamlz.cheTajo.activity;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.firebase.client.Firebase;
+import com.teamlz.cheTajo.R;
 
 public class ScrollingActivity extends AppCompatActivity {
 
