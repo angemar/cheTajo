@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
         mBottomBar.setActiveTabColor(ContextCompat.getColor(this, R.color.colorPrimaryExtraDark));
         mBottomBar.setItems(
                 new BottomBarTab(new IconicsDrawable(this, "gmd-person").sizeDp(24), "Profilo"),
-                new BottomBarTab(new IconicsDrawable(this, "gmd-favorite").sizeDp(24), "Recenti"),
-                new BottomBarTab(new IconicsDrawable(this, "gmd-history").sizeDp(24), "Preferiti"),
+                new BottomBarTab(new IconicsDrawable(this, "gmd-history").sizeDp(24), "Recenti"),
+                new BottomBarTab(new IconicsDrawable(this, "gmd-favorite").sizeDp(24), "Preferiti"),
                 new BottomBarTab(new IconicsDrawable(this, "gmd-room").sizeDp(24), "Nearby")
         );
         mBottomBar.setOnTabClickListener(new OnTabClickListener() {

@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_margin="@dimen/fab_margin"
             android:id="@+id/dresser_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,28 +25,98 @@
             android:src="@mipmap/ic_launcher"/>
 
         <LinearLayout
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginStart="@dimen/fab_margin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:orientation="horizontal">
 
-            <com.mikepenz.iconics.view.IconicsButton
+            <RelativeLayout
+                android:clickable="true"
+                android:id="@+id/relative_follow"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="button1"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:layout_weight="3">
 
-                android:layout_weight="1"/>
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/follow_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="follow"/>
 
-            <com.mikepenz.iconics.view.IconicsButton
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_follow"
+                    android:layout_marginStart="6dp"
+                    android:layout_toRightOf="@id/follow_text"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:iiv_color="@color/colorPrimaryDark"
+                    app:iiv_icon="gmd-favorite" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_like"
+                android:clickable="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="button2"
-                android:layout_weight="1"/>
+                android:layout_height="35dp"
+                android:layout_weight="3">
 
-            <com.mikepenz.iconics.view.IconicsButton
+                <TextView
+                    android:paddingStart="25dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/like_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="like"/>
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_like"
+                    android:layout_toRightOf="@id/like_text"
+                    android:layout_marginStart="6dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    app:iiv_color="@color/colorPrimaryDark"
+                    app:iiv_icon="gmd-thumb_up" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relative_map"
+                android:clickable="true"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="button3"
-                android:layout_weight="1"/>
+                android:layout_height="35dp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/map_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="map"
+                    android:gravity="end|right"/>
+
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_map"
+                    android:layout_marginStart="6dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_toRightOf="@id/map_text"
+                    android:layout_toEndOf="@id/map_text"
+                    app:iiv_color="@color/colorPrimaryDark"
+                    app:iiv_icon="gmd-room" />
+
+            </RelativeLayout>
+
 
         </LinearLayout>
 
