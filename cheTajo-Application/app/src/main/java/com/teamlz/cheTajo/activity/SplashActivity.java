@@ -32,7 +32,7 @@ public class SplashActivity extends AppCompatActivity {
         //finish immersive mode
 
         Typeface roboto = Typeface.createFromAsset(this.getAssets(), "font/Roboto-Light.ttf");
-        TextView text = (TextView) findViewById(R.id.text);
+        TextView text = (TextView) findViewById(R.id.title_splash);
         text.setTypeface(roboto);
 
         TimerTask task = new TimerTask() {

@@ -21,10 +21,6 @@ public class UserProfileActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Typeface roboto = Typeface.createFromAsset(this.getAssets(), "font/Roboto-BoldItalic.ttf");
-        TextView text = (TextView) findViewById(R.id.text);
-        text.setTypeface(roboto);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
