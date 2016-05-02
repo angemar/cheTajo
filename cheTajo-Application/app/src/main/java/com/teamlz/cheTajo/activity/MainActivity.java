@@ -5,6 +5,7 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
@@ -16,8 +17,11 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.melnykov.fab.FloatingActionButton;
+import com.mikepenz.iconics.IconicsDrawable;
 import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.BottomBarTab;
 import com.roughike.bottombar.OnMenuTabClickListener;
+import com.roughike.bottombar.OnTabClickListener;
 import com.teamlz.cheTajo.R;
 import com.teamlz.cheTajo.adapter.SampleFragmentPagerAdapter;
 
@@ -52,32 +56,40 @@ public class MainActivity extends AppCompatActivity {
         fab_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, UserProfileActivity.class);
-                startActivity(intent);
+
             }
         });
 
         mBottomBar = BottomBar.attach(findViewById(R.id.main_coordinator), savedInstanceState);
         mBottomBar.noTopOffset();
-        mBottomBar.setItemsFromMenu(R.menu.menu_bottom, new OnMenuTabClickListener() {
-
+        mBottomBar.useFixedMode();
+        mBottomBar.setActiveTabColor(ContextCompat.getColor(this, R.color.colorPrimaryExtraDark));
+        mBottomBar.setItems(
+                new BottomBarTab(new IconicsDrawable(this, "gmd-person").sizeDp(24), "Profilo"),
+                new BottomBarTab(new IconicsDrawable(this, "gmd-favorite").sizeDp(24), "Recenti"),
+                new BottomBarTab(new IconicsDrawable(this, "gmd-history").sizeDp(24), "Preferiti"),
+                new BottomBarTab(new IconicsDrawable(this, "gmd-room").sizeDp(24), "Nearby")
+        );
+        mBottomBar.setOnTabClickListener(new OnTabClickListener() {
             @Override
-            public void onMenuTabSelected(int menuItemId) {
-                if (menuItemId == R.id.bottomBarItem1) {
-                    // The user selected item number one.
-                }
+            public void onTabSelected(int position) {
+                SameActionTab(position);
             }
 
             @Override
-            public void onMenuTabReSelected(int menuItemId) {
-                if (menuItemId == R.id.bottomBarItem2) {
-                    // The user reselected item number one, scroll your content to top.
-                }
+            public void onTabReSelected(int position) {
+                SameActionTab(position);
             }
         });
 
-        mBottomBar.mapColorForTab(0, ContextCompat.getColor(this, R.color.colorPrimary));
+    }
 
+    public void SameActionTab(int position){
+        switch (position){
+            case 0:
+                Intent intent = new Intent(MainActivity.this, UserProfileActivity.class);
+                startActivity(intent);
+        }
     }
 
     @Override
