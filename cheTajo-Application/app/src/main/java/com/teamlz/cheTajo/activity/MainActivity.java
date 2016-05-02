@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         mBottomBar.setOnTabClickListener(new OnTabClickListener() {
             @Override
             public void onTabSelected(int position) {
-                SameActionTab(position);
+                //SameActionTab(position);
             }
 
             @Override

@@ -35,10 +35,9 @@ public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
 
             case 1:
                 return BlankFragment.newInstance(position);
-
-            default:
-                return null;
         }
+
+        return null;
     }
 
     @Override

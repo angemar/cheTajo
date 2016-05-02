@@ -38,7 +38,6 @@ public class LoginOrSignupActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent (v.getContext(), MainActivity.class);
                 startActivity(i);
-                finishAffinity();
             }
         });
 
